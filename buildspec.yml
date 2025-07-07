@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Building TypeScript...
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed.
+artifacts:
+  files:
+    - dist/**
+    - package.json
+    - Procfile
+    - node_modules/**    # Optional: include only if your EB environment needs it
+  discard-paths: yes
