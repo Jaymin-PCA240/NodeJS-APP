@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (_req, res) => {
-  res.send('Hello from TypeScript + Express from Github!');
+  res.send('Hello from TypeScript + Express from Github. change in index file!');
 });
 
 app.listen(port, () => {
