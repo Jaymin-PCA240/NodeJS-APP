@@ -19,3 +19,5 @@ artifacts:
     - dist/**
     - package.json
     - Procfile
+    - node_modules/**    # Optional: include only if your EB environment needs it
+  discard-paths: yes
