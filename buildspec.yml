@@ -16,5 +16,6 @@ phases:
       - echo Build completed.
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes
+    - dist/**
+    - package.json
+    - Procfile
